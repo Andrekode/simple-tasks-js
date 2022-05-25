@@ -8,7 +8,8 @@
 // and letters matching charB will be replaced with charA. See the expected console log comments below.
 
 function doubleSwap(string, charA, charB) {
-    let regex = new RegExp(`${charA}|${charB}`, 'g');
+    const regex = new RegExp(`${charA}|${charB}`, 'g');
+
     return string.replace(regex, (match) => (match === charA) ? charB : charA )
 }
 
