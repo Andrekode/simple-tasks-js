@@ -53,7 +53,32 @@ const hobbies = [
   "opera",
 ];
 
-const regex = new RegExp("^(?!.*?[._]{2})[a-zA-Z0-9_.]+$");
+
+// Use whatever tools you deem necessary to accomplish the following:
+
+// Generate an object for each name in the names array formatted as follows:
+// {
+//     name: (the name from the name array),
+//     age: (generate a random age from 18-50),
+//     hobbies: (randomly generate an array of 3 hobbies from the hobbies array. PS make
+//               sure the hobbies are 3 unique ones)
+// }
+
+// example:
+
+// {
+//     name: "Scott"
+//     age: 31
+//     hobbies: ["books", "electronics", "guitar"]
+// }
+
+// Place these objects into an array.
+
+// PS: The hobbies array has to be cleaned up! Write code to remove duplicates before using it.
+// Beware the capitalized duplicates as well.
+
+// Good luck!
+
 
 function sortData(data) {
   const dataLowerCase = data.map((activity) => activity.toLowerCase());
@@ -84,28 +109,3 @@ const createObject = names.map((person) => {
   return { name: person, age: randomNum, hobbies: randomHobbies };
 });
 console.log([...createObject]);
-
-// Use whatever tools you deem necessary to accomplish the following:
-
-// Generate an object for each name in the names array formatted as follows:
-// {
-//     name: (the name from the name array),
-//     age: (generate a random age from 18-50),
-//     hobbies: (randomly generate an array of 3 hobbies from the hobbies array. PS make
-//               sure the hobbies are 3 unique ones)
-// }
-
-// example:
-
-// {
-//     name: "Scott"
-//     age: 31
-//     hobbies: ["books", "electronics", "guitar"]
-// }
-
-// Place these objects into an array.
-
-// PS: The hobbies array has to be cleaned up! Write code to remove duplicates before using it.
-// Beware the capitalized duplicates as well.
-
-// Good luck!
